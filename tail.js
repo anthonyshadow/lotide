@@ -5,7 +5,7 @@ const assertEqual = function(actual, expected) {
   } else {
     console.log("🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}")
   }
-
+}
 const tail = function(array) {
   let newArray = [];
   for (let i = 1; i < array.length; i++) {
