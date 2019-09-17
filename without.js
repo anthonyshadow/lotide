@@ -29,7 +29,7 @@ const without = function (arr, remove) {
       }
     }
     // console.log("getting rid of matching");
-    // array1.splice(i, 1);
+    // array1.splice(x, 1);
     return arr
   }
 }
