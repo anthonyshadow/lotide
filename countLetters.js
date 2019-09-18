@@ -8,7 +8,7 @@ const assertEqual = function (actual, expected) {
 }
 
 const countLetters = function(word) {
-  let results = {};
+  const results = {};
   const removeSpaces = word.split(' ').join('').toLowerCase('');
   for (const letter of removeSpaces) {
     if (results[letter]) {
