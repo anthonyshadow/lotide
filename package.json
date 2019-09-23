@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@anthonyshadow/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a library of useful javascript functions.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/anthonyshadow/lotide.git"
   },
-  "author": "",
+  "author": "Anthony Shadowitz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/anthonyshadow/lotide/issues"
