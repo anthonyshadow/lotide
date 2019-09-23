@@ -44,3 +44,5 @@ assertArraysEqual(test2, ["GROUND", "CONTROL", "TO", "MAJOR", "TOM"]);
 const test3 = map(words, word => `${word} is part of space oddity`);
 console.log(test3);
 assertArraysEqual(test3, [ 'ground is part of space oddity', 'control is part of space oddity', 'to is part of space oddity', 'major is part of space oddity', 'tom is part of space oddity' ]);
+
+module.exports = map;

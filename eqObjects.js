@@ -49,6 +49,8 @@ const cd2 = { c: "1", d: ["2", 3, 4] };
 console.log(eqObjects(cd, cd2)); // => false
 
 
+module.exports = eqObjects;
+
 //assertEqual((cd, dc));
 //assertEqual((cd, cd2));
 
@@ -62,3 +64,4 @@ console.log(eqObjects(cd, cd2)); // => false
 
 //assertEqual((ab, ba));
 //assertEqual((ab, abc))
+

@@ -32,6 +32,7 @@ const eqObjects = function (object1, object2) {
   }
 };
 
+function inspect(input) { return input; }
 // FUNCTION IMPLEMENTATION
 const assertObjectsEqual = function(actual, expected) {
   if (eqObjects(actual, expected)) {
@@ -48,3 +49,4 @@ assertObjectsEqual(cd, dc); // => true
 const cd2 = { c: "1", d: ["2", 3, 4] };
 assertObjectsEqual(cd, cd2); // => false
 
+module.exports = assertObjectsEqual;
