@@ -3,10 +3,10 @@ const takeUntil = function(array, callback) {
   for (let item of array) {
     if (callback(item)) {
       // if function is true return array
-      return arr;   
+      return arr;
     } else {
       // push item to arr until the function is true
-      arr.push(item);      
+      arr.push(item);
     }
   }
   return arr;
@@ -24,7 +24,7 @@ console.log(results2);
 
 
 
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   if (array1.length === array2.length) {
     for (var i = 0; i < array1.length; i++) {
       if (array1[i] !== array2[i]) {
@@ -35,7 +35,7 @@ const eqArrays = function (array1, array2) {
     return false;
   }
   return true;
-}
+};
 
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
@@ -43,7 +43,7 @@ const assertArraysEqual = function(actual, expected) {
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`)
   }
-}
+};
 
 
 
@@ -52,10 +52,10 @@ const assertArraysEqual = function(actual, expected) {
 
 const test1 = takeUntil(data1, x => x < 0);
 console.log(test1);
-assertArraysEqual(test1, [ 1, 2, 5, 7, 2 ]);
+assertArraysEqual(test1, [1, 2, 5, 7, 2]);
 
 const test2 = takeUntil(data2, x => x === ',');
 console.log(test2);
-assertArraysEqual(test2, [ 'I\'ve', 'been', 'to', 'Hollywood' ]);
+assertArraysEqual(test2, ['I\'ve', 'been', 'to', 'Hollywood']);
 
 module.exports = takeUntil;

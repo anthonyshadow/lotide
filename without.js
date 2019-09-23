@@ -9,7 +9,7 @@ const eqArrays = function(array1, array2) {
     return false;
   }
   return true;
-}
+};
 
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
@@ -17,20 +17,20 @@ const assertArraysEqual = function(actual, expected) {
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`)
   }
-}
+};
 
-const without = function (arr, remove) {
+const without = function(arr, remove) {
   for (var i = 0; i < remove.length; i++) {
     for (var x = 0; x < arr.length; x++) {
       if (arr[x] === remove[i]) {
-        arr.splice(x,1);
+        arr.splice(x, 1);
       }
     }
     // console.log("getting rid of matching");
     // array1.splice(x, 1);
     return arr
   }
-}
+};
 const words = ["hello", "world", "lighthouse"];
 console.log(without(["hello", "world", "lighthouse"], ["lighthouse"])); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function

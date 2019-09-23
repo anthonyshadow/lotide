@@ -4,7 +4,7 @@ const middle = function(arr) {
   return arr.length % 2 ?
     arr.slice(mid, mid + 1) : // Odd
     arr.slice(mid - 1, mid + 1); // Even
-}
+};
 
 
 

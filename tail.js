@@ -6,6 +6,6 @@ const tail = function(array) {
     newArray[i - 1] = array[i];
   }
   return newArray;
-  };
+};
 
-  module.exports = tail;
+module.exports = tail;

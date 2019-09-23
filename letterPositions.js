@@ -22,7 +22,7 @@ const assertEqual = function(actual, expected) {
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`)
   }
-}
+};
 
 
 const assertArraysEqual = function(actual, expected) {
@@ -31,7 +31,7 @@ const assertArraysEqual = function(actual, expected) {
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`)
   }
-}
+};
 
 const eqArrays = function(array1, array2) {
   console.log(array1);
@@ -48,7 +48,7 @@ const eqArrays = function(array1, array2) {
   console.log("HERE");
 
   return true;
-}
+};
 
 console.log(letterPositions("hello"));
 //console.log([1]);

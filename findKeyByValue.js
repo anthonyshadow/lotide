@@ -4,25 +4,25 @@ const assertEqual = function(actual, expected) {
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`)
   }
-}
+};
 
-const findKeyByValue = function(list, value){
+const findKeyByValue = function(list, value) {
   let keys = Object.keys(list);
   for (let key of keys) {
     if (list[key] === value) {
       return key;
     }
   }
-}
+};
 
 
 
 
 
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
+  drama: "The Wire"
 };
 
 console.log(findKeyByValue(bestTVShowsByGenre, "family guy"));
